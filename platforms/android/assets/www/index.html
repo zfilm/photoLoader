@@ -47,18 +47,23 @@
     </script>
     </head>
     <body style="visibility:hidden;">
-        <div class="app">
-            <h1>PhoneGap</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
+        <!-- the view or "page"; select it as the "home" screen -->
+        <div id="settings" data-dojo-type="dojox/mobile/View" data-dojo-props="selected:true">
+            <!-- a sample heading -->
+            <h1 data-dojo-type="dojox/mobile/Heading">"Homepage" View</h1>
+            <!-- a rounded rectangle list container -->
+            <ul data-dojo-type="dojox/mobile/RoundRectList">
+            <!-- list item with an icon containing a switch -->
+                <li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="icon:'images/icon-1.png'">Airplane Mode
+                    <!-- the switch -->
+                    <div data-dojo-type="dojox/mobile/Switch"></div>
+                </li>
+                <!-- list item with an icon that slides this view away and then loads another page -->
+                <li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="icon:'images/icon-2.png', rightText:'mac'">Wi-Fi</li>
+                <!-- list item with an icon that slides to a view called "general" -->
+                <li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="icon:'images/icon-3.png', rightText:'AcmePhone', moveTo:'general'">Carrier</li>
+            </ul>
         </div>
-        <script type="text/javascript" src="phonegap.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript">
-            app.initialize();
-        </script>
     </body>
 </html>
 
