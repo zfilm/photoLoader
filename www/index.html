@@ -47,23 +47,7 @@
     </script>
     </head>
     <body >
-        <!-- the view or "page"; select it as the "home" screen -->
-        <div id="settings" data-dojo-type="dojox/mobile/View" data-dojo-props="selected:true">
-            <!-- a sample heading -->
-            <h1 data-dojo-type="dojox/mobile/Heading">Homepage Test2 View</h1>
-            <!-- a rounded rectangle list container -->
-            <ul data-dojo-type="dojox/mobile/RoundRectList">
-            <!-- list item with an icon containing a switch -->
-                <li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="icon:'images/icon-1.png'">Airplane Mode
-                    <!-- the switch -->
-                    <div data-dojo-type="dojox/mobile/Switch"></div>
-                </li>
-                <!-- list item with an icon that slides this view away and then loads another page -->
-                <li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="icon:'images/icon-2.png', rightText:'mac'">Wi-Fi</li>
-                <!-- list item with an icon that slides to a view called "general" -->
-                <li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="icon:'images/icon-3.png', rightText:'AcmePhone', moveTo:'general'">Carrier</li>
-            </ul>
-        </div>
+        <button dojoType="dojox.mobile.Button" class="baseBtn blackBtn" style="width: 240px;">Black</button>
     </body>
 </html>
 
